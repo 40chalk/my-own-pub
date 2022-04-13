@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Includes\Lib\Settings;
+namespace MyOwnPub\Includes\Lib\Settings;
 
 include_once MY_OWN_PUB_DIR . 'includes/lib/util.php';
 

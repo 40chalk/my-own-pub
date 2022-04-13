@@ -1,5 +1,7 @@
 <?php
 
+namespace MyOwnPub\Includes\Lib\ACF;
+
 function addACF() {
 	// Define path and URL to the ACF plugin.
 	define( 'MY_ACF_PATH', MY_OWN_PUB_DIR . '/includes/acf/' );
