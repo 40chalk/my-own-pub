@@ -4,7 +4,7 @@ namespace MyOwnPub\Includes\Lib\Settings;
 
 include_once MY_OWN_PUB_DIR . 'includes/lib/util.php';
 
-use function App\Includes\Lib\Util\createSlug;
+use function MyOwnPub\Includes\Lib\Util\createSlug;
 
 function createAdminPage( string $name, string $capability, string $icon ) {
 	$slug_name   = createSlug( name: $name );

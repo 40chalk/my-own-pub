@@ -43,16 +43,19 @@ function create_block_test_block_init() {
 	}
 }
 
-add_action( 'init', 'create_block_test_block_init' );
+add_action( 'init', 'MyOwnPub\create_block_test_block_init' );
+
 
 add_action( 'admin_menu', function ()
 {
 	createAdminPage( name: 'My Own Pub', capability: 'manage_options', icon: 'dashicons-schedule' );
 } );
+
 add_action( 'admin_menu', function ()
 {
 	createSubMenuPage( name: 'My Own Pub', capability: 'manage_options', position: 0 );
 } );
+
 
 add_action( 'init', function ()
 {
@@ -62,5 +65,6 @@ add_action( 'init', function ()
 {
 	createPostType( name: 'Contributor', public: true );
 } );
+
 
 addACF();
