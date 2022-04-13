@@ -1,0 +1,12 @@
+{
+    "name": "cstelum/my-own-pub",
+    "description": "A plugin for independent writers",
+    "type": "project",
+    "authors": [
+        {
+            "name": "40chalk",
+            "email": "cstelum8aegis@outlook.com"
+        }
+    ],
+    "require": {}
+}

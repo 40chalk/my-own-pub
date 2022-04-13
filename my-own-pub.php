@@ -61,6 +61,7 @@ add_action( 'init', function ()
 {
 	createPostType( name: 'Author', public: true );
 } );
+
 add_action( 'init', function ()
 {
 	createPostType( name: 'Contributor', public: true );
