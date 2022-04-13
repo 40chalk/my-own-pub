@@ -20,9 +20,6 @@ require_once __DIR__ . '/vendor/autoload.php';
 define( 'MY_OWN_PUB_DIR', plugin_dir_path( file: __FILE__ ) );
 define( 'MY_OWN_PUB_DIR_URL', plugin_dir_url( file: __FILE__ ) );
 
-require_once MY_OWN_PUB_DIR . 'includes/lib/settings.php';
-require_once MY_OWN_PUB_DIR . 'includes/lib/acf.php';
-
 use function MyOwnPub\Includes\Lib\Settings\{createAdminPage, createSubMenuPage, createPostType};
 use function MyOwnPub\Includes\Lib\ACF\addACF;
 
@@ -45,7 +42,7 @@ function create_block_test_block_init() {
 
 add_action( 'init', 'MyOwnPub\create_block_test_block_init' );
 
-
+// Admin Pages
 add_action( 'admin_menu', function ()
 {
 	createAdminPage( name: 'My Own Pub', capability: 'manage_options', icon: 'dashicons-schedule' );
@@ -56,7 +53,7 @@ add_action( 'admin_menu', function ()
 	createSubMenuPage( name: 'My Own Pub', capability: 'manage_options', position: 0 );
 } );
 
-
+// Post Types
 add_action( 'init', function ()
 {
 	createPostType( name: 'Author', public: true );

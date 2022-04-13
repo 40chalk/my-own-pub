@@ -8,5 +8,12 @@
             "email": "cstelum8aegis@outlook.com"
         }
     ],
-    "require": {}
+    "require": {},
+    "autoload": {
+        "files": [
+            "includes/lib/acf.php",
+            "includes/lib/settings.php",
+            "includes/lib/util.php"
+        ]
+    }
 }
