@@ -1,0 +1,18 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 2,
+	"name": "create-block/my-own-pub",
+	"version": "0.1.0",
+	"title": "My Own Pub",
+	"category": "widgets",
+	"icon": "smiley",
+	"description": "Example static block scaffolded with Create Block tool.",
+	"supports": {
+		"html": false
+	},
+	"textdomain": "my-own-pub",
+	"editorScript": "file:../../../../build/test-one.js",
+	"editorStyle": "file:../../../../build/test-one.css",
+	"viewScript": "",
+	"style": "file:../../../../build/style-test-one.css"
+}
