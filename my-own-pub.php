@@ -15,6 +15,8 @@
 
 namespace MyOwnPub;
 
+if (!defined('ABSPATH')) exit;
+
 require_once __DIR__ . '/vendor/autoload.php';
 
 define( 'MY_OWN_PUB_DIR', plugin_dir_path( file: __FILE__ ) );
