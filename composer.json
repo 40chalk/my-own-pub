@@ -12,7 +12,10 @@
     "autoload": {
         "files": [
             "includes/lib/acf.php",
+            "includes/lib/activate.php",
+            "includes/lib/dbActions.php",
             "includes/lib/settings.php",
+            "includes/lib/uninstall.php",
             "includes/lib/util.php"
         ]
     }
