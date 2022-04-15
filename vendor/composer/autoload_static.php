@@ -11,7 +11,6 @@ class ComposerStaticInit5a9ebfc321d7b6deaf15e230db722f02
         '76782ad18c069751b587895ed59a105c' => __DIR__ . '/../..' . '/includes/lib/activate.php',
         '8ed26e47c8efe20be5db794478167551' => __DIR__ . '/../..' . '/includes/lib/dbActions.php',
         '7eb31c30292ea707c3886ee8693baca3' => __DIR__ . '/../..' . '/includes/lib/settings.php',
-        'a6e0a3af96d05125874a0b31e0da0051' => __DIR__ . '/../..' . '/includes/lib/uninstall.php',
         '9db24086700c89991608434c81c42571' => __DIR__ . '/../..' . '/includes/lib/util.php',
     );
 
