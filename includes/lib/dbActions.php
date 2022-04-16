@@ -10,26 +10,6 @@ function queryCreateTable( $tableName, $query ): void {
 	dbDelta( queries: "CREATE TABLE $tableName ($query) $charset;" );
 }
 
-$universeTableQuery = "
-	id bigint(20) unsigned NOT NULL AUTO_INCREMENT,
-	name varchar(60) NOT NULL DEFAULT '',
-	options longtext NOT NULL DEFAULT '',
-	works longtext NOT NULL DEFAULT '',
-	PRIMARY KEY  (id)
-";
-queryCreateTable( tableName: 'myop_universe', query: $universeTableQuery );
-
-
-$chaptersTableQuery = "
-	id bigint(20) unsigned NOT NULL AUTO_INCREMENT,
-    name varchar(60) NOT NULL DEFAULT '',
-    options longtext NOT NULL DEFAULT '',
-    text longtext NOT NULL DEFAULT '',
-    PRIMARY KEY  (id)
-";
-queryCreateTable( tableName: 'myop_chapters', query: $chaptersTableQuery );
-
-
 function dbBackupToJson() {
 }
 
