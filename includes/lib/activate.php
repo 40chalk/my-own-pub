@@ -12,7 +12,7 @@ function activateMyOwnPub() {
 		works longtext NOT NULL DEFAULT '',
 		PRIMARY KEY  (id)
 		";
-	queryCreateTable( tableName: 'myop_universe', query: $universeTableQuery );
+	queryCreateTable( tableName: 'universe', query: $universeTableQuery );
 
 	$chaptersTableQuery = "
 		id bigint(20) unsigned NOT NULL AUTO_INCREMENT,
@@ -21,5 +21,5 @@ function activateMyOwnPub() {
 	    text longtext NOT NULL DEFAULT '',
 	    PRIMARY KEY  (id)
 		";
-	queryCreateTable( tableName: 'myop_chapters', query: $chaptersTableQuery );
+	queryCreateTable( tableName: 'chapters', query: $chaptersTableQuery );
 }
