@@ -11,6 +11,7 @@
     "require": {},
     "autoload": {
         "files": [
+            "includes/admin/pages/main/my-own-pub-settings.php",
             "includes/lib/acf.php",
             "includes/lib/activate.php",
             "includes/lib/dbActions.php",

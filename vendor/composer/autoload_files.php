@@ -6,6 +6,7 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
+    'e8ee1aa141edabc122ef40d05fb91e92' => $baseDir . '/includes/admin/pages/main/my-own-pub-settings.php',
     '15dacadb6785bd6948aa6bfe1c0e072f' => $baseDir . '/includes/lib/acf.php',
     '76782ad18c069751b587895ed59a105c' => $baseDir . '/includes/lib/activate.php',
     '8ed26e47c8efe20be5db794478167551' => $baseDir . '/includes/lib/dbActions.php',

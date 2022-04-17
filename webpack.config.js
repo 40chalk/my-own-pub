@@ -9,7 +9,7 @@ module.exports = [
     },
 },
     {
-        entry: "./includes/admin/pages/src/",
+        entry: "./includes/admin/pages/main/src/",
         output: {
             filename: "my-own-pub.js",
             path: path.resolve(__dirname, "build"),
