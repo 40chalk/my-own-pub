@@ -24,6 +24,7 @@ define( 'MY_OWN_PUB_DIR_URL', plugin_dir_url( file: __FILE__ ) );
 
 use function MyOwnPub\Includes\Lib\Settings\{createAdminPage, createSubMenuPage, createPostType};
 use function MyOwnPub\Includes\Lib\ACF\addACF;
+use function MyOwnPub\Includes\Lib\DbActions\dbBackupToJson;
 
 // On plugin activation
 register_activation_hook( file: __FILE__, callback: 'MyOwnPub\Includes\Lib\Activate\activateMyOwnPub');
