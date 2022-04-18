@@ -57,8 +57,10 @@ addACF();
 
 add_action( 'admin_post_createUniverse', function ()
 {
-	global $wpdb;
-	$universe['name'] = $_POST['name'];
-	$wpdb->insert( 'wp_myop_universe', $universe );
+	if (is_user_logged_in()) {
+		global $wpdb;
+		$universe['name'] = $_POST['name'];
+		$wpdb->insert( table: 'wp_myop_universe', data: $universe );
+	}
 } );
 
