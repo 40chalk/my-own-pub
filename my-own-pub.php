@@ -64,3 +64,15 @@ add_action( 'admin_post_createUniverse', function ()
 	}
 } );
 
+add_action( 'admin_post_selectUniverse', function ()
+{
+	if (is_user_logged_in()) {
+		global $wpdb;
+		$tableName = $wpdb->prefix . 'myop_universe';
+		$query = "SELECT * FROM $tableName";
+		echo json_encode($wpdb->get_results($query));
+	}
+	return 'failed';
+}
+);
+
