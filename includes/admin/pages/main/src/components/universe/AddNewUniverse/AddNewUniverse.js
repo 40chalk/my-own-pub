@@ -2,7 +2,7 @@ import React, {useRef} from 'react';
 
 const AddNewUniverse = () => {
     const universeName = useRef()
-    function universeFormHandler(event) {
+    const universeFormHandler = (event) => {
         event.preventDefault()
         const data = new FormData()
 

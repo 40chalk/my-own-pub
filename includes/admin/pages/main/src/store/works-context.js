@@ -10,6 +10,7 @@ export const WorksContextProvider = (props) => {
     const [book, setBook] = useState(null)
     const [story, setStory] = useState(null)
     const [appendix, setAppendix] = useState(null)
+    const [view, setView] = useState(null)
 
     useEffect(() => {
         fetch('/wp-admin/admin-post.php?action=selectUniverse')

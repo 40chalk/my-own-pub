@@ -8,7 +8,7 @@ const SelectUniverse = () => {
         <div>
             <label htmlFor="universes">Select Universe</label>
             <select name="universes" onChange={ctx.onSelectUniverse}>
-                {ctx.works && ctx.works.map(universe => <option value={universe.id}>{universe.name}</option>)}
+                {ctx.works && ctx.works.map(universe => <option key={universe.id} value={universe.id}>{universe.name}</option>)}
             </select>
         </div>
     );
