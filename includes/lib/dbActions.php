@@ -2,8 +2,6 @@
 
 namespace MyOwnPub\Includes\Lib\DbActions;
 
-define( 'BACK_UP_DIR', WP_CONTENT_DIR . '/myop_bak/');
-
 function queryCreateTable( $tableName, $query ): void {
 	global $wpdb;
 	$charset   = $wpdb->get_charset_collate();

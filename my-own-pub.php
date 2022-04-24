@@ -23,6 +23,7 @@ require_once __DIR__ . '/vendor/autoload.php';
 
 define( 'MY_OWN_PUB_DIR', plugin_dir_path( file: __FILE__ ) );
 define( 'MY_OWN_PUB_DIR_URL', plugin_dir_url( file: __FILE__ ) );
+define( 'BACK_UP_DIR', WP_CONTENT_DIR . '/myop_bak/');
 
 use function MyOwnPub\Includes\Lib\Settings\{createPostType};
 use function MyOwnPub\Includes\Admin\Pages\Main\createMainAdminPage;

@@ -8,7 +8,6 @@
             "email": "cstelum8aegis@outlook.com"
         }
     ],
-    "require": {},
     "autoload": {
         "files": [
             "includes/admin/pages/main/my-own-pub-settings.php",
@@ -18,5 +17,8 @@
             "includes/lib/settings.php",
             "includes/lib/util.php"
         ]
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.5"
     }
 }

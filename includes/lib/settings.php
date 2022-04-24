@@ -4,7 +4,7 @@ namespace MyOwnPub\Includes\Lib\Settings;
 
 use function MyOwnPub\Includes\Lib\Util\createSlug;
 
-function createPostType( string $name, bool $public ) {
+function createPostType( string $name, bool $public ): void {
 	register_post_type(
 		post_type: $name . 's',
 		// CPT Options
